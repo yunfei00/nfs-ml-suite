@@ -1,0 +1,32 @@
+# ===== Workdir (never commit) =====
+raw/
+processed/
+splits/
+runs/
+exports/
+cache/
+
+# common large artifacts
+*.npz
+*.pt
+*.pth
+*.ckpt
+*.csv
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# ===== Python =====
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+*.egg-info/
+dist/
+build/
+
+# ===== IDE =====
+.idea/
+.vscode/

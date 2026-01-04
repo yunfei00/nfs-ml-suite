@@ -1,0 +1,13 @@
+workdir_env: NFS_WORKDIR
+
+grid:
+  H: 51
+  W: 51
+  x_min_mm: -5.0
+  x_max_mm:  5.0
+  y_min_mm: -5.0
+  y_max_mm:  5.0
+  z_mm: 1.0
+
+export:
+  inverse_csv_columns: ["x","y","z","hx_re","hx_im","hy_re","hy_im"]

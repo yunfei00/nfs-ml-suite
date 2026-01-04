@@ -1,0 +1,16 @@
+# Inverse (V1): (Ex,Ey,Ez,Hx,Hy,Hz) re/im -> (Hx,Hy) re/im
+task: inverse
+
+data:
+  train_npz: processed/inverse/train.npz
+  val_npz:   processed/inverse/val.npz
+
+channels:
+  x_names: ["ex_re","ex_im","ey_re","ey_im","ez_re","ez_im","hx_re","hx_im","hy_re","hy_im","hz_re","hz_im"]
+  y_names: ["hx_re","hx_im","hy_re","hy_im"]
+
+model:
+  name: mlp
+  hidden: 2048
+  depth: 4
+  dropout: 0.1
